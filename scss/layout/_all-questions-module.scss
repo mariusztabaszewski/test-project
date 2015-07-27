@@ -1,0 +1,287 @@
+.activities {
+	background: white;
+	box-shadow: 0 2px 4px $light-grey;
+}
+
+.activities-header {
+	background: $light-blue;
+	@include bp(medium) {
+		width: calc(100% - 214px);
+	}
+	@extend %clearfix;
+	.profile-photo {
+		float: left;
+	}
+	.activities-name {
+		width: calc(100% - 55px);
+		float: right;
+		@include bp(small) {
+			width: calc(100% - 90px);
+			padding-top: 8px;
+		}
+	}
+	.subject-content {
+		width: calc(100% - 55px);
+		float: right;
+		//text-align: right;
+		@include bp(small) {
+			width: calc(100% - 90px);
+		}
+	}
+}
+
+.activities-header {
+	.activities-name p {
+		margin: 10px 0;
+	}
+	.subject h2 {
+		margin-top: 0;
+	}
+}
+
+.activities-history {
+	@extend %clearfix;
+	padding-bottom: 30px;
+	border-bottom: 1px solid #EEEEEE;
+	@include bp(small) {
+		padding-bottom: 40px;
+	}
+}
+
+.last-activities-content {
+	float: left;
+	width: 50%;
+	@extend %clearfix;
+	@include bp(small) {
+		width: calc(100% - 214px);
+	}
+}
+
+.last-activities-items {
+	float: left;
+	height: 160px;
+	padding-top: 10px;
+	overflow: hidden;
+	@extend %clearfix;
+	@include bp(small) {
+		width: calc(100% - 90px);
+		height: 190px;
+		padding-top: 20px;
+		padding-left: 12px;
+	}
+	@include bp(medium) {
+		padding-left: 18px;
+	}
+}
+
+.last-activities-item:last-child {
+	margin-right: 0;
+}
+
+.last-activities-items {
+	.item-activity {
+		&:after {
+		content: "";
+		display: block;
+		width: 10px;
+		height: 10px;
+		position: absolute;
+		left: calc(35px - 5px);
+		bottom: -16px;	
+		border-radius: 100%;
+		background: $grey;
+		}
+	}
+}
+
+.last-activities-item {
+	width: 80px;
+	height: 140px;
+	position: relative;
+	float: left;
+	margin-right: 2px;
+	margin-bottom: 20px;
+	background: $light-grey;
+	@include bp(small) {
+		width: 90px;
+		height: 160px;
+		margin-right: 12px;
+	}
+	@include bp(medium) {
+		margin-right: 17px;
+	}
+	.profile-photo {
+		width: 55px;
+		margin: 0 auto;
+		margin: 10px auto;
+		@include bp(small) {
+			width: auto;
+			margin: 0;
+		}
+	}
+}
+
+.related-activities {
+	width: 50%;
+	height: 150px;
+	float: right;
+	padding-left: 20px;
+	@include bp(small) {
+		width: 214px;
+		height: 180px;
+		padding-left: 40px;
+	}
+	div {
+		height: 40px;
+		line-height: 40px;
+		@include bp(small) {
+			height: 50px;
+			line-height: 50px;
+		}
+	}
+}
+
+.activities-asked {
+	display: none;
+	@include bp(small) {
+		width: 90px;
+		height: 180px;
+		display: block;
+		position: relative;
+		float: left;
+		background: $light-blue;
+	}
+}
+
+span.item-activity {
+	width: 70px;
+	display: block;
+	position: absolute;
+	bottom: 0;
+	margin: 10px 5px;
+	padding-top: 10px;
+	text-align: center;
+	border-top: 1px solid $grey;
+	@include bp(small) {
+		width: 70px;
+		margin: 10px;
+	}
+}
+
+.more-activities {
+	background: white;
+	text-align: center;
+	padding-top: 20px;
+	@include bp(small) {
+		padding-top: 25px;
+	}
+	span {
+		display: block;
+		margin-bottom: 52px;
+		@include bp(small) {
+			margin-bottom: 62px;
+		}
+		&:after {
+			content: "";
+			display: block;
+			width: 10px;
+			height: 10px;
+			position: absolute;
+			left: calc(100% / 2 - 5px);
+			bottom: -6px;
+			background: $grey;
+			border-radius: 100%;
+		}
+	}
+}
+
+.answered {
+	.item-activity {
+		border-top: 1px solid $black;
+		&:after {
+			background: $black;
+		}
+	}
+}
+
+.activities:nth-child(3) .last-activities-item:first-child {
+	@include bp(extra-bp) {
+		display: none;
+	}
+}
+
+.load-questions {
+	display: block;
+	margin: 30px 20px 0;
+	text-decoration: none;
+}
+
+// main-photos
+
+.activities:first-child {
+	.activities-header .profile-photo-content {
+		background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+	}
+}
+.activities:nth-child(2) {
+	.activities-header .profile-photo-content {
+		background: url(../../images/photo-waweru.jpg) no-repeat center center / cover;
+	}
+}
+.activities:nth-child(3) {
+	.activities-header .profile-photo-content {
+		background: url(../../images/photo-halima.jpg) no-repeat center center / cover;
+	}
+}
+
+// additional-photos
+
+// first
+
+.activities:first-child .last-activities-item:nth-child(2) .profile-photo-content {
+	background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+}
+
+.activities:first-child .last-activities-item:nth-child(3) .profile-photo-content {
+	background: url(../../images/photo-andrew.jpg) no-repeat center center / cover;
+}
+
+.activities:first-child .last-activities-item:nth-child(4) .profile-photo-content {
+	background: url(../../images/photo-waweru.jpg) no-repeat center center / cover;
+}
+
+.activities:first-child .last-activities-item:nth-child(5) .profile-photo-content {
+	background: url(../../images/photo-patricia.jpg) no-repeat center center / cover;
+}
+
+// second
+
+.activities:nth-child(2) .last-activities-item:nth-child(2) .profile-photo-content {
+	background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+}
+
+.activities:nth-child(2) .last-activities-item:nth-child(3) .profile-photo-content {
+	background: url(../../images/photo-andrew.jpg) no-repeat center center / cover;
+}
+
+.activities:nth-child(2) .last-activities-item:nth-child(4) .profile-photo-content {
+	background: url(../../images/photo-waweru.jpg) no-repeat center center / cover;
+}
+
+.activities:nth-child(2) .last-activities-item:nth-child(5) .profile-photo-content {
+	background: url(../../images/photo-patricia.jpg) no-repeat center center / cover;
+}
+
+// third
+
+.activities:nth-child(3) .last-activities-item:nth-child(2) .profile-photo-content {
+	background: url(../../images/photo-halima.jpg) no-repeat center center / cover;
+}
+
+.activities:nth-child(3) .last-activities-item:nth-child(3) .profile-photo-content {
+	background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+}
+
+.activities:nth-child(3) .last-activities-item:nth-child(4) .profile-photo-content {
+	background: url(../../images/photo-andrew.jpg) no-repeat center center / cover;
+}

@@ -1,0 +1,79 @@
+doctype html
+html(lang='en')
+	head
+		include jade/head.jade
+	body
+		header.question-header
+			.header-outer-content
+				a(href="#"): .arrow-back-button
+				.header-inner-content
+					.question-heading
+						h1.question-main-heading Question
+						a(href="#"): .add-question-button
+					.discussion-status
+						p last time discussed  1 </span> day ago
+		.question-outer-content
+			main.question-inner-content
+				article.single-question
+					.single-question-content
+						.single-question-data
+							.profile-photo
+								.profile-photo-content.question-photo
+							.question-name
+								p <span class="name"> Eva </span> <span class="name-action"> is asking </span>
+							.question-subject
+								h2.subject Will insulin make my patient gain weight?
+						.single-question-text
+							p.message-text All my patients with diabetes should see an opthalmogist yearly for a dialated eye axamination – beginning at diagnosis inpeople with type 2 diabets, and after 5 years in people with type 1 diabets after puberty. Patientswith know eye disease, symptoms of blurred visions in one eye, or blind spots may need to see their ophthalmologist more frequently.
+					.single-question-status
+						.question-following
+							p unfollow
+						.votes.other-activities
+							p <span> 19 </span> upvotes
+							.votes-button
+								a(href="#"): .arrow-up-button
+								a(href="#"): .arrow-down-button
+					a(href="#").discussion-button <span> Give </span> new answer
+				.conversation-status.other-activities
+					p <span> 2 </span> peers already answered Eva
+				article.comment
+					.comment-content
+						.profile-photo
+							.profile-photo-content.comment-photo
+						.comment-name
+							p <span class="name"> Patricia </span> <span class="name-action"> commented it </span> <span class="day other-activities"> yesterday </span>
+						.comment-text
+							p.message-text Numbers or tingling in your feet should be reported to your doctor at your regular visits.
+					.votes.other-activities
+						p <span> 8 </span> upvotes
+						.votes-button
+							a(href="#"): .arrow-up-button
+							a(href="#"): .arrow-down-button
+				article.comment.comment-inner
+					.comment-content
+						.profile-photo
+							.profile-photo-content.comment-photo
+						.comment-name
+							p <span class="name"> David </span> <span class="name-action"> commented it </span> <span class="day other-activities"> yesterday </span>
+						.comment-text
+							p.message-text You should check your feet daily redness, caluses, cracks or skin breakdown.
+					.votes.other-activities
+						p <span> 2 </span> upvotes
+						.votes-button
+							a(href="#"): .arrow-up-button
+							a(href="#"): .arrow-down-button
+					a(href="#").discussion-button <span> Continue </span> discussion
+				article.comment
+					.comment-content
+						.profile-photo
+							.profile-photo-content.comment-photo
+						.comment-name
+							p <span class="name"> Joseph's </span> <span class="name-action"> commented it </span> <span class="day other-activities"> two days </span>
+						.comment-text
+							p.message-text When your blood sugar is low, your body gives out signs that you need food. Different people have different symptoms. You will learn to know your symptoms.
+					.votes.other-activities
+						p <span> 3 </span> downvotes
+						.votes-button
+							a(href="#"): .arrow-up-button
+							a(href="#"): .arrow-down-button
+					a(href="#").discussion-button <span> Comment </span>								

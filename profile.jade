@@ -1,0 +1,68 @@
+doctype html
+html(lang='en')
+	head
+		include jade/head.jade
+	body
+		.profile-container
+			.profile-outer-content
+				.profile-inner-content
+					a(href="#"): .close-button
+					section.profile-data
+						.profile-photo
+							.profile-photo-content
+						p.name Dr. Halima
+						ul.profile-history
+							li member for <span> 5 months </span>
+							li last seen <span> Saturday afternoon </span>
+							li.activity-level activity level
+								ul.activity-badges
+									li activity badge red
+									li activity badge red
+									li activity badge grey
+					section.profile-slider
+						.service-history
+							h2 How it all started
+							h3 That's where we have been these 5 months ago
+							ul.service-statistics
+								li.other-activities <span> 46 </span> peers 
+								li.other-activities <span> 29 </span> discussions 
+								li.other-activities <span> 19 </span> findings  
+								li.other-activities <span> 10 </span> questions 
+						a(href="#"): .slide-button.slide-back-button
+						a(href="#"): .slide-button.slide-next-button
+					section.latest-members
+						h3 Who joined the platform that same period
+						.members-gallery
+							.gallery-item
+								.profile-photo
+									.profile-photo-content
+								p.name 
+									| S.E.N. 
+									br
+									| Waweru
+							.gallery-item
+								.profile-photo
+									.profile-photo-content
+								p.name Patricia
+							.gallery-item
+								.profile-photo
+									.profile-photo-content
+								p.name 
+									| Joseph
+									br
+									| Aluoch
+				section.hottest-discussion
+					h3 The hottest discussion these days
+					.discussion-info
+						.profile-photo
+							.profile-photo-content
+						p <span class="name"> Andrew </span> <span class="name-action"> Found The Guardian article </span>
+						h4.subject Vegan diet to stop diabets progress
+						ul.discussion-statistics
+							li.other-activities <span> 3 </span> realted discussions 
+							li.other-activities <span> 3 </span> conversations 
+							li.other-activities <span> 6 </span> peers involved 
+							li.other-activities <span> 19 </span> upvotes  
+
+
+		script(src="js/minified/script.min.js")

@@ -1,0 +1,29 @@
+.question-outer-content {
+	background: $white-grey;
+	@include bp(small) {
+		min-height: calc(100% - 105px);
+	}
+	@include bp(medium) {
+		min-height: calc(100% - 120px);
+	}
+	@include bp(large) {
+		width: 95%;
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+}
+
+.question-inner-content {
+	padding-bottom: 40px;
+	background: $white-grey;
+	@include bp(small) {
+		max-width: 100%;
+		display: flex;
+		flex-direction: column;
+		align-items: flex-end;
+	}
+	@include bp(medium) {
+		width: 840px;
+		margin: 0 auto;
+	}
+}

@@ -1,0 +1,34 @@
+// Normalize
+
+@import 'normalize';
+
+// Typography
+
+@import 'typography';
+
+// box sizing: border-box
+// http://www.paulirish.com/2012/box-sizing-border-box-ftw/
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+// Base styles
+
+html {
+	height: 100%;
+}
+
+body {
+	height: 100%;
+	background: $orange;
+}
+
+ul {
+	list-style: none;
+	padding-left: 0;
+}
+

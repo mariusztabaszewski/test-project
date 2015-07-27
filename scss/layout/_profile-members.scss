@@ -1,0 +1,48 @@
+.latest-members {
+	text-align: center;
+}
+
+.members-gallery {
+	width: 294px;
+	margin: 20px auto;
+	@extend %clearfix;
+	.gallery-item {
+		width: 90px;
+		float: left;
+		margin-right: 12px;
+	}
+	.gallery-item:last-child {
+		margin-right: 0;
+	}
+	.profile-photo {
+		width: 90px;
+		display: inline-block;
+		background-image: repeating-linear-gradient(45deg,rgb(255,255,255),rgb(255,255,255) 8%, rgb(140,140,140) 10%);
+		background-size: 30px 30px;
+		padding-top: 15px;
+		@include bp(medium) {
+			padding: 15px 10px;
+		}
+		.profile-photo-content {
+			width: 60px;
+			height: 60px;
+		}
+	}
+	.name {
+		margin-right: 0;
+	}
+}
+
+// photos
+
+.gallery-item:first-child .profile-photo-content {
+	background: url(../../images/photo-waweru.jpg) no-repeat center center / cover;
+}
+
+.gallery-item:nth-child(2) .profile-photo-content {
+	background: url(../../images/photo-patricia.jpg) no-repeat center center / cover;
+}
+
+.gallery-item:last-child .profile-photo-content {
+	background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+}

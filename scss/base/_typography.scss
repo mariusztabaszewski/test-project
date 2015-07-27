@@ -1,0 +1,192 @@
+body {
+	font-family: Roboto;
+}
+
+.name {
+	font-size: 14px;
+	font-weight: 500;
+	color: $blue;
+	margin-right: 4px;
+	@include bp(small) {
+		font-size: 15px;
+		margin-right: 6px;
+	}
+}
+
+.name-action {
+	font-size: 10px;
+	font-weight: 400;
+	color: $grey;
+	text-transform: uppercase;
+	@include bp(small) {
+		font-size: 11px;
+	}
+}
+
+.message-text {
+	font-size: 12.5px;
+	color: $grey;
+	line-height: 1.5;
+	margin: 0;
+	@include bp(small) {
+  		font-size: 13.5px;
+  	}
+  	@include bp(medium) {
+  		font-size: 14px;
+  	}
+}
+
+.other-activities {
+	font-size: 13px;
+	font-weight: 500;
+	font-style: italic;
+	color: $black;
+	@include bp(small) {
+		font-size: 14px;
+	}
+	span {
+		font-style: normal;
+		margin-right: 8px;
+	}
+}
+
+.subject {
+	font-size: 14px;
+	font-weight: 500;
+	font-style: italic;
+	color: $blue;
+	margin-top: 0;
+	@include bp(small) {
+		font-size: 16px;
+	}
+}
+
+.single-question-status {
+	font-size: 13px;
+	font-style: normal;
+	color: $blue;
+	font-weight: 500px;
+	@include bp(small) {
+		font-size: 14px;
+	}
+}
+
+.profile-history {
+	li {
+		font-size: 14px;
+		font-weight: 400;
+		color: $grey;
+		text-transform: uppercase;
+	}
+	span {
+		color: $black;
+		text-transform: none;
+	}
+}
+
+.profile-container h3 {
+	font-size: 14px;
+	font-weight: 400;
+	text-transform: uppercase;
+	color: $grey;
+}
+
+.profile-slider {
+	h2 {
+		font-size: 20px;
+		font-style: italic;
+		font-weight: 500;
+		@include bp(small) {
+			font-size: 24px;
+		}
+	}
+}
+
+.all-questions-filters {
+		font-weight: 500;
+	label {
+		color: $black;
+		font-size: 12px;
+	@include bp(large) {
+		font-size: 14px;
+		}
+	}
+	.filter-hot {
+		color: $blue;
+		font-weight: 500;
+		text-decoration: none;
+	}
+	.filter-recent {
+		color: $grey;
+		font-weight: 500;
+	}
+}
+
+.search-form {
+	input[id="query"] {
+		font-size: 14px;
+		color: $black;
+	}
+	input[type="button"] {
+		font-size: 14px;
+		color: $grey;
+		text-transform: uppercase;
+	}
+}
+
+.search-menu-button {
+	text-decoration: none;
+	color: $black;
+	font-weight: 500;
+	font-size: 14px;
+}
+
+.question-header {
+	p {
+		@include bp(small) {
+			font-size: 12px;
+			font-weight: 400;
+			font-style: italic;
+		}
+		@include bp(medium) {
+			font-size: 13px;
+		}
+	}
+	span {
+		font-weight: 500;
+		font-style: normal;
+	}
+}
+
+.question-main-heading {
+	font-weight: 500;
+	text-transform: uppercase;
+	font-size: 22px;
+	@include bp(medium) {
+		font-size: 25px;					
+	}
+}
+
+
+.discussion-button {
+	color: $black;
+	font-weight: 500;
+	font-size: 14px;
+	span {
+		text-transform: uppercase;
+		margin-right: 6px;
+	}
+}
+
+.all-questions-filters {
+	color: $black;
+	font-style: italic;
+	font-size: 12px;
+	@include bp(large) {
+		font-size: 14px;
+	}
+}
+
+.load-questions {
+	color: red;
+}

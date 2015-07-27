@@ -1,0 +1,139 @@
+doctype html
+html(lang='en')
+	head
+		include jade/head.jade
+	body
+		header.all-questions-header
+			.all-questions-header-outer-content
+				a(href="#"): .arrow-back-button
+				.all-questions-header-inner-content
+					.all-questions-heading
+						h1.question-main-heading Question
+						a(href="#"): .add-question-button
+					.all-questions-filters
+						input(type="radio" checked="checked")
+						label My Shelf
+						input(type="radio") 
+						label All questions 
+						p Sort by: <a class="filter-recent" href="#"> recent </a> or <a class="filter-hot" href="#"> hot </a>
+			a(href="#").search-menu-button Search questions
+			.search-content
+				.search-form
+					.search-input
+						input(id="query" placeholder="Search questions")
+						input(type="button" value="Search")
+		.all-questions-outer-content
+			main.all-questions-inner-content
+				article.activities
+					header.activities-header
+						.profile-photo
+							.profile-photo-content
+						.activities-name
+							p <span class="name"> Eva </span> <span class="name-action"> is asking </span>
+						.subject-content
+							h2.subject Will insulin make my patient gain weight?
+					section.activities-history
+						.last-activities-content
+							.activities-asked
+								span.name-action.item-activity asked
+							.last-activities-items
+								.last-activities-item.more-activities.other-activities
+									p <span> 3 </span> more activities
+									//.profile-photo
+										.profile-photo-content
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item.answered
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity answered
+						.related-activities
+							.related-discussion.other-activities
+								p <span> 1 </span> related discussion
+							.related-peers.other-activities
+								p <span> 6 </span> peers involved
+							.related-conversations.other-activities
+								p <span> 3 </span> conversations
+				article.activities
+					header.activities-header
+						.profile-photo
+							.profile-photo-content
+						.activities-name
+							p <span class="name"> Andrew </span> <span class="name-action"> is asking </span>
+						.subject-content
+							h2.subject Vegan diet in diabets treatment?
+					section.activities-history
+						.last-activities-content
+							.activities-asked
+								span.name-action.item-activity asked
+							.last-activities-items
+								.last-activities-item.more-activities.other-activities
+									p <span> 6 </span> more activities
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item.answered
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity answered
+						.related-activities
+							.related-discussion.other-activities
+								p <span> 2 </span> related discussion
+							.related-peers.other-activities
+								p <span> 9 </span> peers involved
+							.related-conversations.other-activities
+								p <span> 5 </span> conversations
+				article.activities
+					header.activities-header
+						.profile-photo
+							.profile-photo-content
+						.activities-name
+							p <span class="name"> Joseph </span> <span class="name-action"> is asking </span>
+						.subject-content
+							h2.subject Vegan diet to stop diabets progress
+					section.activities-history
+						.last-activities-content
+							.activities-asked
+								span.name-action.item-activity asked
+							.last-activities-items
+								.last-activities-item.more-activities.other-activities
+									p <span> 2 </span> more activities
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity commented
+								.last-activities-item.answered
+									.profile-photo
+										.profile-photo-content
+									span.name-action.item-activity answered
+						.related-activities
+							.related-discussion.other-activities
+								p <span> 5 </span> related discussion
+							.related-peers.other-activities
+								p <span> 4 </span> peers involved
+							.related-conversations.other-activities
+								p <span> 0 </span> conversations
+				a(href="#").load-questions.other-activities load more questions				
