@@ -22,3 +22,5 @@ I use SASS and JADE.
 I also use GRUNT.
 
 I use Roboto font.
+
+* I fixed some problems with photos on 'user profile'
