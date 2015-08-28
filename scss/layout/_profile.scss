@@ -1,0 +1,275 @@
+.profile-container {
+	min-height: 100%;
+	background: $dark-grey;
+	@include bp(small) {
+		padding-top: 12px;
+		padding-bottom: 40px;
+	}
+}
+
+.profile-outer-content {
+	max-width: 850px;
+	min-height: 100%;
+	position: relative;
+	margin: 0 auto;
+	background: white;
+}
+
+.profile-inner-content {
+	width: 94%;
+	margin: 0 auto;
+	@include bp(small) {
+		width: 90%;
+		max-width: 590px;
+	}
+}
+
+.profile-inner-content {
+	.profile-data .profile-photo-content {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		background: url(../../images/photo-halima.jpg) no-repeat center center / cover ;
+		@include bp(small) {
+			width: 60px;
+			height: 60px;
+		}
+	}
+}
+
+.close-button {
+	width: 10px;
+	height: 10px;
+	position: absolute;
+	top: 20px;
+	right: 20px;
+	background: url(../../images/icons/icon-close.jpg) no-repeat center center / cover;
+}
+
+.profile-data {
+	width: 100%;
+	padding-top: 20px;
+	text-align: center;
+	border-bottom: 1px solid $grey;
+	.name {
+		margin-right: 0;
+		margin-top: 0;
+	}
+}
+
+.profile-history {
+	@extend %clearfix;
+	@include bp(small) {
+		margin-bottom: 0px;
+	}
+	li {
+		margin-bottom: 18px;
+		@include bp(small) {
+			float: left;
+			margin-right: 22px;
+		}
+	}
+	li:last-child {
+		@include bp(small) {
+			margin-right: 0;
+		}
+	}
+
+	.activity-level {
+		@include bp(small) {
+			margin-right: 0;
+		}
+	}
+	span {
+		display: block;
+		margin-top: 4px;
+		@include bp(small) {
+			display: inline;
+			margin-left: 10px;
+		}
+	}
+}
+
+.activity-badges {
+	@include bp(small) {
+		float: right;
+		margin-left: 10px;
+		}
+	li {
+		width: 18px;
+		height: 25px;
+		display: inline-block;
+		margin: 0 6px 0 0;
+		font-size: 0px;
+		color: transparent;
+		background: url(../../images/icons/icon-badge-red.jpg) no-repeat center center / cover;
+	}
+	li:last-child {
+		background: url(../../images/icons/icon-badge-grey.jpg) no-repeat center center / cover;
+		margin-right: 0;
+	}
+}
+
+.profile-slider {
+	text-align: center;
+	position: relative;
+}
+
+.service-statistics {
+	width: 200px;
+	margin: 0 auto 40px;
+	@extend %clearfix;
+	@include bp(extra-small) {
+		width: 440px;
+	}
+	li {
+		float: left;
+		width: 90px;
+		height: 90px;
+		position: relative;
+		padding-top: 10px;
+		z-index: 1;
+	}
+	li:first-child, li:nth-child(3) {
+		margin-right: 20px;
+	}
+	li:nth-child(2) {
+		@include bp(extra-small) {
+			margin-right: 20px;
+		}
+	}
+	li:before {
+		content: "";
+		display: block;
+		width: 90px;
+		height: 90px;
+		position: absolute;
+		top: 0;
+		z-index: -1;
+		background: rgba(224,243,253,0.8);
+	}
+	li:first-child:before {
+		transform: rotate(65deg);
+	}
+	li:nth-child(2):before {
+		transform: rotate(-15deg);
+	}
+	li:nth-child(3):before {
+		transform: rotate(60deg);
+	}
+	li:last-child:before {
+		transform: rotate(10deg);
+	}
+	span {
+		display: block;
+		margin: 12px 0;
+	}
+}
+
+.profile-slider h3 {
+	margin-bottom: 40px;
+}
+
+.slide-button {
+	width: 30px;
+	height: 30px;
+	position: absolute;
+	top: 0;
+	border-radius: 100%;
+}
+
+.slide-back-button {
+	background: url(../../images/icons/icon-slide-back.jpg) no-repeat center center / cover;
+}
+
+.slide-next-button {
+	right: 0;
+	background: url(../../images/icons/icon-arrow-next.jpg) no-repeat center center / cover;
+}
+
+.latest-members {
+	text-align: center;
+}
+
+.members-gallery {
+	width: 294px;
+	margin: 20px auto;
+	@extend %clearfix;
+	.gallery-item {
+		width: 90px;
+		float: left;
+		margin-right: 12px;
+	}
+	.gallery-item:last-child {
+		margin-right: 0;
+	}
+	.profile-photo {
+		width: 90px;
+		display: inline-block;
+		background-image: repeating-linear-gradient(45deg,rgb(255,255,255),rgb(255,255,255) 8%, rgb(140,140,140) 10%);
+		background-size: 30px 30px;
+		padding: 20px;
+		.profile-photo-content {
+			width: 50px;
+			height: 50px;
+		}
+	}
+	.name {
+		margin-right: 0;
+	}
+}
+
+// photos
+
+.gallery-item:first-child .profile-photo-content {
+	background: url(../../images/photo-waweru.jpg) no-repeat center center / cover;
+}
+
+.gallery-item:nth-child(2) .profile-photo-content {
+	background: url(../../images/photo-patricia.jpg) no-repeat center center / cover;
+}
+
+.gallery-item:last-child .profile-photo-content {
+	background: url(../../images/photo-alouch.jpg) no-repeat center center / cover;
+}
+
+.discussion-info {
+	position: relative;
+	padding-bottom: 80px;
+	background-image: repeating-linear-gradient(45deg,rgb(255,255,255),rgb(255,255,255) 8%, rgb(140,140,140) 10%);
+	background-size: 30px 30px;
+}
+
+.hottest-discussion {
+	text-align: center;
+	h3 {
+		margin-bottom: 80px;
+	}
+	 .discussion-info .profile-photo-content {
+		width: 50px;
+		height: 50px;
+		margin: 0 auto;
+		background: url(../../images/photo-andrew.jpg) no-repeat center center / cover;
+		position: absolute;
+		left: calc(100% / 2 - 25px);
+		top: -25px;
+	}
+}
+
+.discussion-statistics {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+	@include bp(extra-small) {
+		text-align: center;
+	}
+	li {
+		float: left;
+		width: 50%;
+		margin-bottom: 20px;
+		@include bp(small) {
+			width: 25%;
+		}
+	}
+}
+

@@ -3,10 +3,10 @@
 
 $breakpoints: (
   'extra-small' : 480px,
-  'small' : 660px,
-  'extra-bp' : 729px,
-  'medium' : 840px,
-  'large' : 1050px
+  'extra-bp' : 729px, // extra bp for all-questions third module
+  'small' : 768px, 
+  'medium' : 960px,
+  'large' : 1050px 
 );
 
 @mixin bp($breakpoint) {

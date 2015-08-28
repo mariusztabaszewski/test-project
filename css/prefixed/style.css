@@ -1,5 +1,5 @@
 @import url(http://fonts.googleapis.com/css?family=Roboto:400,400italic,500,500italic,700);
-.all-questions-header .all-questions-heading:after, .all-questions-header-inner-content:after, .search-input:after, .activities-header:after, .activities-history:after, .last-activities-content:after, .last-activities-items:after, .profile-history:after, .members-gallery:after, .service-statistics:after {
+.profile-history:after, .service-statistics:after, .members-gallery:after, .all-questions-header .all-questions-heading:after, .all-questions-header-inner-content:after, .search-input:after, .activities-header:after, .activities-history:after, .last-activities-content:after, .last-activities-items:after {
   content: "";
   display: table;
   clear: both; }
@@ -153,7 +153,7 @@ body {
   font-weight: 500;
   color: #0266B3;
   margin-right: 4px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .name {
       font-size: 15px;
       margin-right: 6px; } }
@@ -163,7 +163,7 @@ body {
   font-weight: 400;
   color: #7D8B9C;
   text-transform: uppercase; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .name-action {
       font-size: 11px; } }
 
@@ -172,10 +172,10 @@ body {
   color: #7D8B9C;
   line-height: 1.5;
   margin: 0; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .message-text {
       font-size: 13.5px; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .message-text {
       font-size: 14px; } }
 
@@ -184,7 +184,7 @@ body {
   font-weight: 500;
   font-style: italic;
   color: #2D2C2E; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .other-activities {
       font-size: 14px; } }
   .other-activities span {
@@ -197,7 +197,7 @@ body {
   font-style: italic;
   color: #0266B3;
   margin-top: 0; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .subject {
       font-size: 16px; } }
 
@@ -206,7 +206,7 @@ body {
   font-style: normal;
   color: #0266B3;
   font-weight: 500px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question-status {
       font-size: 14px; } }
 
@@ -229,7 +229,7 @@ body {
   font-size: 20px;
   font-style: italic;
   font-weight: 500; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .profile-slider h2 {
       font-size: 24px; } }
 
@@ -263,12 +263,12 @@ body {
   font-weight: 500;
   font-size: 14px; }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .question-header p {
     font-size: 12px;
     font-weight: 400;
     font-style: italic; } }
-@media (min-width: 840px) {
+@media (min-width: 960px) {
   .question-header p {
     font-size: 13px; } }
 .question-header span {
@@ -279,7 +279,7 @@ body {
   font-weight: 500;
   text-transform: uppercase;
   font-size: 22px; }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .question-main-heading {
       font-size: 25px; } }
 
@@ -319,164 +319,278 @@ ul {
   list-style: none;
   padding-left: 0; }
 
-.all-questions-header {
-  height: 110px;
+.profile-photo {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .profile-photo {
+      border: none;
+      padding: 20px; } }
+  .profile-photo .profile-photo-content {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%; }
+    @media (min-width: 768px) {
+      .profile-photo .profile-photo-content {
+        width: 50px;
+        height: 50px; } }
+
+.profile-container {
+  min-height: 100%;
+  background: #24282A; }
+  @media (min-width: 768px) {
+    .profile-container {
+      padding-top: 12px;
+      padding-bottom: 40px; } }
+
+.profile-outer-content {
+  max-width: 850px;
+  min-height: 100%;
   position: relative;
-  background: white;
-  box-shadow: 0px 1px 4px #EEEEEE; }
-  @media (min-width: 660px) {
-    .all-questions-header {
-      height: 150px; } }
-  @media (min-width: 840px) {
-    .all-questions-header {
-      height: 160px; } }
-
-.all-questions-header-outer-content {
-  height: 60px;
-  position: relative; }
-  @media (min-width: 660px) {
-    .all-questions-header-outer-content {
-      height: 105px; } }
-  @media (min-width: 840px) {
-    .all-questions-header-outer-content {
-      width: 95%;
-      max-width: 1260px;
-      margin: 0 auto; } }
-
-.all-questions-header .all-questions-heading {
-  padding-right: 10px;
-  width: 100%; }
-  @media (min-width: 660px) {
-    .all-questions-header .all-questions-heading {
-      float: left;
-      width: auto;
-      margin-top: 39px; } }
-  .all-questions-header .all-questions-heading h1.question-main-heading {
-    float: left;
-    margin: 0; }
-    @media (min-width: 660px) {
-      .all-questions-header .all-questions-heading h1.question-main-heading {
-        margin-right: 44px; } }
-    @media (min-width: 840px) {
-      .all-questions-header .all-questions-heading h1.question-main-heading {
-        margin-right: 48px; } }
-  .all-questions-header .all-questions-heading .add-question-button {
-    float: right; }
-    @media (min-width: 840px) {
-      .all-questions-header .all-questions-heading .add-question-button {
-        margin-top: 2px; } }
-
-.all-questions-header-inner-content {
-  width: 85%;
-  height: 100%;
-  float: right;
-  padding-top: 17px; }
-  @media (min-width: 660px) {
-    .all-questions-header-inner-content {
-      padding-right: 20px;
-      padding-top: 0; } }
-  @media (min-width: 840px) {
-    .all-questions-header-inner-content {
-      width: 65%;
-      float: none;
-      margin: 0 auto;
-      padding-right: 0; } }
-  @media (min-width: 1050px) {
-    .all-questions-header-inner-content {
-      width: 840px; } }
-
-.all-questions-filters {
-  display: none; }
-  @media (min-width: 660px) {
-    .all-questions-filters {
-      display: block;
-      float: right;
-      margin-top: 48px; } }
-  @media (min-width: 840px) {
-    .all-questions-filters {
-      margin-top: 50px; } }
-  .all-questions-filters input[type="radio"] {
-    margin-top: -1px;
-    vertical-align: middle; }
-  .all-questions-filters input:nth-child(3) {
-    margin-left: 12px; }
-    @media (min-width: 1050px) {
-      .all-questions-filters input:nth-child(3) {
-        margin-left: 24px; } }
-  .all-questions-filters p {
-    display: inline;
-    margin-left: 24px; }
-    @media (min-width: 1050px) {
-      .all-questions-filters p {
-        margin-left: 48px; } }
-  @media (min-width: 1050px) {
-    .all-questions-filters a {
-      margin: 0 6px; } }
-
-.search-content {
-  display: none; }
-  @media (min-width: 660px) {
-    .search-content {
-      display: block;
-      height: 32px; } }
-  @media (min-width: 840px) {
-    .search-content {
-      width: 95%;
-      max-width: 1260px;
-      height: 34px;
-      margin: 0 auto; } }
-
-.search-form {
-  width: 85%;
-  float: right;
-  height: 32px;
-  padding-right: 20px; }
-  @media (min-width: 840px) {
-    .search-form {
-      width: 65%;
-      padding-right: 0;
-      float: none;
-      margin: 0 auto;
-      height: 34px; } }
-  @media (min-width: 1050px) {
-    .search-form {
-      width: 840px; } }
-  .search-form input[id="query"] {
-    height: 32px;
-    width: calc(100% - 200px);
-    padding-left: 20px;
-    float: left;
-    border: 1px solid #EEEEEE;
-    background: #f8f8f8; }
-    @media (min-width: 840px) {
-      .search-form input[id="query"] {
-        height: 34px;
-        width: calc(100% - 212px); } }
-  .search-form input[type="button"] {
-    width: 180px;
-    height: 32px;
-    float: right;
-    background: white;
-    border: 1px solid #7D8B9C; }
-    @media (min-width: 840px) {
-      .search-form input[type="button"] {
-        height: 34px;
-        width: 190px; } }
-
-.search-menu-button {
-  width: 180px;
-  height: 30px;
-  display: block;
-  position: absolute;
-  left: calc(50% - 90px);
-  bottom: 20px;
-  border: 1px solid #7D8B9C;
-  line-height: 30px;
-  text-align: center;
+  margin: 0 auto;
   background: white; }
-  @media (min-width: 660px) {
-    .search-menu-button {
-      display: none; } }
+
+.profile-inner-content {
+  width: 94%;
+  margin: 0 auto; }
+  @media (min-width: 768px) {
+    .profile-inner-content {
+      width: 90%;
+      max-width: 590px; } }
+
+.profile-inner-content .profile-data .profile-photo-content {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto;
+  background: url(../../images/photo-halima.jpg) no-repeat center center/cover; }
+  @media (min-width: 768px) {
+    .profile-inner-content .profile-data .profile-photo-content {
+      width: 60px;
+      height: 60px; } }
+
+.close-button {
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  background: url(../../images/icons/icon-close.jpg) no-repeat center center/cover; }
+
+.profile-data {
+  width: 100%;
+  padding-top: 20px;
+  text-align: center;
+  border-bottom: 1px solid #7D8B9C; }
+  .profile-data .name {
+    margin-right: 0;
+    margin-top: 0; }
+
+@media (min-width: 768px) {
+  .profile-history {
+    margin-bottom: 0px; } }
+.profile-history li {
+  margin-bottom: 18px; }
+  @media (min-width: 768px) {
+    .profile-history li {
+      float: left;
+      margin-right: 22px; } }
+@media (min-width: 768px) {
+  .profile-history li:last-child {
+    margin-right: 0; } }
+@media (min-width: 768px) {
+  .profile-history .activity-level {
+    margin-right: 0; } }
+.profile-history span {
+  display: block;
+  margin-top: 4px; }
+  @media (min-width: 768px) {
+    .profile-history span {
+      display: inline;
+      margin-left: 10px; } }
+
+@media (min-width: 768px) {
+  .activity-badges {
+    float: right;
+    margin-left: 10px; } }
+.activity-badges li {
+  width: 18px;
+  height: 25px;
+  display: inline-block;
+  margin: 0 6px 0 0;
+  font-size: 0px;
+  color: transparent;
+  background: url(../../images/icons/icon-badge-red.jpg) no-repeat center center/cover; }
+.activity-badges li:last-child {
+  background: url(../../images/icons/icon-badge-grey.jpg) no-repeat center center/cover;
+  margin-right: 0; }
+
+.profile-slider {
+  text-align: center;
+  position: relative; }
+
+.service-statistics {
+  width: 200px;
+  margin: 0 auto 40px; }
+  @media (min-width: 480px) {
+    .service-statistics {
+      width: 440px; } }
+  .service-statistics li {
+    float: left;
+    width: 90px;
+    height: 90px;
+    position: relative;
+    padding-top: 10px;
+    z-index: 1; }
+  .service-statistics li:first-child, .service-statistics li:nth-child(3) {
+    margin-right: 20px; }
+  @media (min-width: 480px) {
+    .service-statistics li:nth-child(2) {
+      margin-right: 20px; } }
+  .service-statistics li:before {
+    content: "";
+    display: block;
+    width: 90px;
+    height: 90px;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+    background: rgba(224, 243, 253, 0.8); }
+  .service-statistics li:first-child:before {
+    -webkit-transform: rotate(65deg);
+        -ms-transform: rotate(65deg);
+            transform: rotate(65deg); }
+  .service-statistics li:nth-child(2):before {
+    -webkit-transform: rotate(-15deg);
+        -ms-transform: rotate(-15deg);
+            transform: rotate(-15deg); }
+  .service-statistics li:nth-child(3):before {
+    -webkit-transform: rotate(60deg);
+        -ms-transform: rotate(60deg);
+            transform: rotate(60deg); }
+  .service-statistics li:last-child:before {
+    -webkit-transform: rotate(10deg);
+        -ms-transform: rotate(10deg);
+            transform: rotate(10deg); }
+  .service-statistics span {
+    display: block;
+    margin: 12px 0; }
+
+.profile-slider h3 {
+  margin-bottom: 40px; }
+
+.slide-button {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  top: 0;
+  border-radius: 100%; }
+
+.slide-back-button {
+  background: url(../../images/icons/icon-slide-back.jpg) no-repeat center center/cover; }
+
+.slide-next-button {
+  right: 0;
+  background: url(../../images/icons/icon-arrow-next.jpg) no-repeat center center/cover; }
+
+.latest-members {
+  text-align: center; }
+
+.members-gallery {
+  width: 294px;
+  margin: 20px auto; }
+  .members-gallery .gallery-item {
+    width: 90px;
+    float: left;
+    margin-right: 12px; }
+  .members-gallery .gallery-item:last-child {
+    margin-right: 0; }
+  .members-gallery .profile-photo {
+    width: 90px;
+    display: inline-block;
+    background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 8%, #8c8c8c 10%);
+    background-size: 30px 30px;
+    padding: 20px; }
+    .members-gallery .profile-photo .profile-photo-content {
+      width: 50px;
+      height: 50px; }
+  .members-gallery .name {
+    margin-right: 0; }
+
+.gallery-item:first-child .profile-photo-content {
+  background: url(../../images/photo-waweru.jpg) no-repeat center center/cover; }
+
+.gallery-item:nth-child(2) .profile-photo-content {
+  background: url(../../images/photo-patricia.jpg) no-repeat center center/cover; }
+
+.gallery-item:last-child .profile-photo-content {
+  background: url(../../images/photo-alouch.jpg) no-repeat center center/cover; }
+
+.discussion-info {
+  position: relative;
+  padding-bottom: 80px;
+  background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 8%, #8c8c8c 10%);
+  background-size: 30px 30px; }
+
+.hottest-discussion {
+  text-align: center; }
+  .hottest-discussion h3 {
+    margin-bottom: 80px; }
+  .hottest-discussion .discussion-info .profile-photo-content {
+    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    background: url(../../images/photo-andrew.jpg) no-repeat center center/cover;
+    position: absolute;
+    left: calc(100% / 2 - 25px);
+    top: -25px; }
+
+.discussion-statistics {
+  width: 80%;
+  margin: 0 auto;
+  text-align: left; }
+  @media (min-width: 480px) {
+    .discussion-statistics {
+      text-align: center; } }
+  .discussion-statistics li {
+    float: left;
+    width: 50%;
+    margin-bottom: 20px; }
+    @media (min-width: 768px) {
+      .discussion-statistics li {
+        width: 25%; } }
+
+.question-outer-content {
+  background: #FBFBFC; }
+  @media (min-width: 768px) {
+    .question-outer-content {
+      min-height: calc(100% - 105px); } }
+  @media (min-width: 960px) {
+    .question-outer-content {
+      min-height: calc(100% - 120px); } }
+  @media (min-width: 1050px) {
+    .question-outer-content {
+      width: 95%;
+      max-width: 1260px;
+      margin: 0 auto; } }
+
+.question-inner-content {
+  padding-bottom: 40px;
+  background: #FBFBFC; }
+  @media (min-width: 768px) {
+    .question-inner-content {
+      max-width: 100%;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-align-items: flex-end;
+          -ms-flex-align: end;
+              align-items: flex-end; } }
+  @media (min-width: 960px) {
+    .question-inner-content {
+      width: 840px;
+      margin: 0 auto; } }
 
 .question-header {
   height: 60px;
@@ -484,10 +598,10 @@ ul {
   z-index: 1;
   box-shadow: 0px 1px 4px #EEEEEE;
   background: white; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .question-header {
       height: 105px; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .question-header {
       height: 120px;
       display: -webkit-flex;
@@ -505,7 +619,7 @@ ul {
     -webkit-justify-content: flex-end;
         -ms-flex-pack: end;
             justify-content: flex-end; }
-    @media (min-width: 840px) {
+    @media (min-width: 960px) {
       .question-header .header-outer-content {
         width: 95%;
         max-width: 1260px;
@@ -519,7 +633,7 @@ ul {
     display: -ms-flexbox;
     display: flex;
     padding-right: 10px; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .question-header .header-inner-content {
         -webkit-justify-content: space-between;
             -ms-flex-pack: justify;
@@ -528,7 +642,7 @@ ul {
             -ms-flex-align: center;
                 align-items: center;
         padding-right: 0; } }
-    @media (min-width: 840px) {
+    @media (min-width: 960px) {
       .question-header .header-inner-content {
         width: 65%; } }
     @media (min-width: 1050px) {
@@ -545,7 +659,7 @@ ul {
       -webkit-align-items: center;
           -ms-flex-align: center;
               align-items: center; }
-      @media (min-width: 660px) {
+      @media (min-width: 768px) {
         .question-header .header-inner-content .question-heading {
           width: auto;
           -webkit-justify-content: flex-start;
@@ -553,20 +667,20 @@ ul {
                   justify-content: flex-start; } }
     .question-header .header-inner-content p {
       display: none; }
-      @media (min-width: 660px) {
+      @media (min-width: 768px) {
         .question-header .header-inner-content p {
           display: block;
           margin-right: 20px; } }
-      @media (min-width: 840px) {
+      @media (min-width: 960px) {
         .question-header .header-inner-content p {
           margin-right: 0; } }
     .question-header .header-inner-content span {
       margin: 0 12px; }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .question-main-heading {
     margin-right: 44px; } }
-@media (min-width: 840px) {
+@media (min-width: 960px) {
   .question-main-heading {
     margin-right: 48px; } }
 
@@ -574,7 +688,7 @@ ul {
   width: 25px;
   height: 26px;
   border-radius: 100%;
-  background: url(../../sprites/icon-add-question.jpg) no-repeat center center/cover; }
+  background: url(../../images/icons/icon-add-question.jpg) no-repeat center center/cover; }
 
 .arrow-back-button {
   width: 25px;
@@ -586,58 +700,39 @@ ul {
       -ms-transform: translateY(-50%);
           transform: translateY(-50%);
   border-radius: 100%;
-  background: url(../../sprites/icon-arrow-back.jpg) no-repeat center center/cover; }
-  @media (min-width: 660px) {
+  background: url(../../images/icons/icon-arrow-back.jpg) no-repeat center center/cover; }
+  @media (min-width: 768px) {
     .arrow-back-button {
       width: 38px;
       height: 38px;
       left: 20px; } }
 
-.question-outer-content {
-  background: #FBFBFC; }
-  @media (min-width: 660px) {
-    .question-outer-content {
-      min-height: calc(100% - 105px); } }
-  @media (min-width: 840px) {
-    .question-outer-content {
-      min-height: calc(100% - 120px); } }
-  @media (min-width: 1050px) {
-    .question-outer-content {
-      width: 95%;
-      max-width: 1260px;
-      margin: 0 auto; } }
-
-.question-inner-content {
-  padding-bottom: 40px;
-  background: #FBFBFC; }
-  @media (min-width: 660px) {
-    .question-inner-content {
-      max-width: 100%;
-      display: -webkit-flex;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-flex-direction: column;
-          -ms-flex-direction: column;
-              flex-direction: column;
-      -webkit-align-items: flex-end;
-          -ms-flex-align: end;
-              align-items: flex-end; } }
-  @media (min-width: 840px) {
-    .question-inner-content {
-      width: 840px;
-      margin: 0 auto; } }
+.profile-photo {
+  padding: 10px; }
+  @media (min-width: 768px) {
+    .profile-photo {
+      border: none;
+      padding: 20px; } }
+  .profile-photo .profile-photo-content {
+    width: 35px;
+    height: 35px;
+    border-radius: 100%; }
+    @media (min-width: 768px) {
+      .profile-photo .profile-photo-content {
+        width: 50px;
+        height: 50px; } }
 
 .single-question {
   position: relative;
   background: #DFF3FD; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question {
       display: -webkit-flex;
       display: -ms-flexbox;
       display: flex;
       box-shadow: 2px 1px 4px #EEEEEE; } }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .single-question-content {
     width: 80%; } }
 
@@ -648,7 +743,7 @@ ul {
   -webkit-flex-wrap: wrap;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question-data {
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
@@ -656,7 +751,7 @@ ul {
   .single-question-data .question-name {
     width: calc(100% - 55px);
     border-bottom: 1px solid white; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .single-question-data .question-name {
         width: calc(100% - 90px);
         height: 40px;
@@ -667,14 +762,14 @@ ul {
     width: 100%;
     padding: 0 20px;
     margin-top: 10px; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .single-question-data .question-subject {
         width: calc(100% - 90px);
         margin-top: -40px; } }
 
 .single-question .profile-photo {
   border-bottom: 1px solid white; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question .profile-photo {
       border: none; } }
 
@@ -684,7 +779,7 @@ ul {
 .single-question-text {
   padding: 10px;
   background: white; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question-text {
       display: -webkit-flex;
       display: -ms-flexbox;
@@ -694,12 +789,12 @@ ul {
               justify-content: flex-end;
       background: #DFF3FD;
       padding: 0; } }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question-text p {
       width: calc(100% - 90px);
       padding: 10px 10px 50px 10px;
       background: white; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .single-question-text p {
       padding: 20px; } }
 
@@ -710,7 +805,7 @@ ul {
   padding-bottom: 40px;
   background: white;
   border-bottom: 1px solid #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .single-question-status {
       width: 20%;
       -webkit-flex-direction: column;
@@ -719,12 +814,12 @@ ul {
       border: none; } }
   .single-question-status .question-following, .single-question-status .votes {
     width: 50%; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .single-question-status .question-following, .single-question-status .votes {
         width: 100%; } }
   .single-question-status .question-following {
     padding-left: 10px; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .single-question-status .question-following {
         min-height: 90px;
         display: -webkit-flex;
@@ -740,11 +835,11 @@ ul {
 
 .comment .profile-photo {
   border-bottom: 1px solid #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment .profile-photo {
       border: none; } }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .comment {
     display: -webkit-flex;
     display: -ms-flexbox;
@@ -758,17 +853,17 @@ ul {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
   background: white; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment-content {
       width: 80%;
       -webkit-justify-content: flex-end;
           -ms-flex-pack: end;
               justify-content: flex-end; } }
 
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .comment-inner {
     width: calc(100% - 90px); } }
-@media (min-width: 660px) {
+@media (min-width: 768px) {
   .comment-inner .votes {
     width: calc(20% + 22px); } }
 .comment-inner .comment-text {
@@ -786,7 +881,7 @@ ul {
       -ms-flex-align: center;
           align-items: center;
   border-bottom: 1px solid #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment-name {
       width: calc(100% - 90px);
       height: 40px;
@@ -799,7 +894,7 @@ ul {
 .comment-text {
   width: 100%;
   padding: 10px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment-text {
       width: calc(100% - 90px);
       margin-top: -50px;
@@ -828,12 +923,12 @@ ul {
   position: relative;
   border-left: 10px solid #7D8B9C;
   box-shadow: 2px 0px 4px #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment:nth-child(4) {
       border: none; } }
   .comment:nth-child(4) .comment-photo {
     background: url(../../images/photo-andrew.jpg) no-repeat center center/cover; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment:nth-child(4) .discussion-button {
       left: calc(50% - 135px); } }
 
@@ -850,7 +945,7 @@ ul {
 
 .comment .votes {
   padding-bottom: 15px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .comment .votes {
       width: 20%;
       padding-bottom: 0; } }
@@ -867,14 +962,14 @@ ul {
           align-items: center;
   padding-right: 10px;
   background: white; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .votes {
       padding-right: 20px;
       padding-left: 0px; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .votes {
       padding-left: 20px; } }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .votes p {
       width: calc(100% - 10px); } }
 
@@ -882,18 +977,18 @@ ul {
   width: 10px;
   height: 32px;
   margin-left: 24px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .votes-button {
       margin-left: 15px; } }
   .votes-button .arrow-up-button {
     width: 10px;
     height: 11px;
     margin-bottom: 10px;
-    background: url(../../sprites/icon-arrow-up.jpg) no-repeat center center/cover; }
+    background: url(../../images/icons/icon-arrow-up.jpg) no-repeat center center/cover; }
   .votes-button .arrow-down-button {
     width: 10px;
     height: 11px;
-    background: url(../../sprites/icon-arrow-down.jpg) no-repeat center center/cover; }
+    background: url(../../images/icons/icon-arrow-down.jpg) no-repeat center center/cover; }
 
 .discussion-button {
   width: 180px;
@@ -940,13 +1035,172 @@ ul {
 
 .all-questions-inner-content {
   background: #FBFBFC; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .all-questions-inner-content {
       max-width: 100%; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .all-questions-inner-content {
       margin: 0 auto;
       width: 840px; } }
+
+.all-questions-header {
+  height: 110px;
+  position: relative;
+  background: white;
+  box-shadow: 0px 1px 4px #EEEEEE; }
+  @media (min-width: 768px) {
+    .all-questions-header {
+      height: 150px; } }
+  @media (min-width: 960px) {
+    .all-questions-header {
+      height: 160px; } }
+
+.all-questions-header-outer-content {
+  height: 60px;
+  position: relative; }
+  @media (min-width: 768px) {
+    .all-questions-header-outer-content {
+      height: 105px; } }
+  @media (min-width: 960px) {
+    .all-questions-header-outer-content {
+      width: 95%;
+      max-width: 1260px;
+      margin: 0 auto; } }
+
+.all-questions-header .all-questions-heading {
+  padding-right: 10px;
+  width: 100%; }
+  @media (min-width: 768px) {
+    .all-questions-header .all-questions-heading {
+      float: left;
+      width: auto;
+      margin-top: 39px; } }
+  .all-questions-header .all-questions-heading h1.question-main-heading {
+    float: left;
+    margin: 0; }
+    @media (min-width: 768px) {
+      .all-questions-header .all-questions-heading h1.question-main-heading {
+        margin-right: 44px; } }
+    @media (min-width: 960px) {
+      .all-questions-header .all-questions-heading h1.question-main-heading {
+        margin-right: 48px; } }
+  .all-questions-header .all-questions-heading .add-question-button {
+    float: right; }
+    @media (min-width: 960px) {
+      .all-questions-header .all-questions-heading .add-question-button {
+        margin-top: 2px; } }
+
+.all-questions-header-inner-content {
+  width: 85%;
+  height: 100%;
+  float: right;
+  padding-top: 17px; }
+  @media (min-width: 768px) {
+    .all-questions-header-inner-content {
+      padding-right: 20px;
+      padding-top: 0; } }
+  @media (min-width: 960px) {
+    .all-questions-header-inner-content {
+      width: 65%;
+      float: none;
+      margin: 0 auto;
+      padding-right: 0; } }
+  @media (min-width: 1050px) {
+    .all-questions-header-inner-content {
+      width: 840px; } }
+
+.all-questions-filters {
+  display: none; }
+  @media (min-width: 768px) {
+    .all-questions-filters {
+      display: block;
+      float: right;
+      margin-top: 48px; } }
+  @media (min-width: 960px) {
+    .all-questions-filters {
+      margin-top: 50px; } }
+  .all-questions-filters input[type="radio"] {
+    margin-top: -1px;
+    vertical-align: middle; }
+  .all-questions-filters input:nth-child(3) {
+    margin-left: 12px; }
+    @media (min-width: 1050px) {
+      .all-questions-filters input:nth-child(3) {
+        margin-left: 24px; } }
+  .all-questions-filters p {
+    display: inline;
+    margin-left: 24px; }
+    @media (min-width: 1050px) {
+      .all-questions-filters p {
+        margin-left: 48px; } }
+  @media (min-width: 1050px) {
+    .all-questions-filters a {
+      margin: 0 6px; } }
+
+.search-content {
+  display: none; }
+  @media (min-width: 768px) {
+    .search-content {
+      display: block;
+      height: 32px; } }
+  @media (min-width: 960px) {
+    .search-content {
+      width: 95%;
+      max-width: 1260px;
+      height: 34px;
+      margin: 0 auto; } }
+
+.search-form {
+  width: 85%;
+  float: right;
+  height: 32px;
+  padding-right: 20px; }
+  @media (min-width: 960px) {
+    .search-form {
+      width: 65%;
+      padding-right: 0;
+      float: none;
+      margin: 0 auto;
+      height: 34px; } }
+  @media (min-width: 1050px) {
+    .search-form {
+      width: 840px; } }
+  .search-form input[id="query"] {
+    height: 32px;
+    width: calc(100% - 200px);
+    padding-left: 20px;
+    float: left;
+    border: 1px solid #EEEEEE;
+    background: #f8f8f8; }
+    @media (min-width: 960px) {
+      .search-form input[id="query"] {
+        height: 34px;
+        width: calc(100% - 212px); } }
+  .search-form input[type="button"] {
+    width: 180px;
+    height: 32px;
+    float: right;
+    background: white;
+    border: 1px solid #7D8B9C; }
+    @media (min-width: 960px) {
+      .search-form input[type="button"] {
+        height: 34px;
+        width: 190px; } }
+
+.search-menu-button {
+  width: 180px;
+  height: 30px;
+  display: block;
+  position: absolute;
+  left: calc(50% - 90px);
+  bottom: 20px;
+  border: 1px solid #7D8B9C;
+  line-height: 30px;
+  text-align: center;
+  background: white; }
+  @media (min-width: 768px) {
+    .search-menu-button {
+      display: none; } }
 
 .activities {
   background: white;
@@ -954,7 +1208,7 @@ ul {
 
 .activities-header {
   background: #DFF3FD; }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .activities-header {
       width: calc(100% - 214px); } }
   .activities-header .profile-photo {
@@ -962,14 +1216,14 @@ ul {
   .activities-header .activities-name {
     width: calc(100% - 55px);
     float: right; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .activities-header .activities-name {
         width: calc(100% - 90px);
         padding-top: 8px; } }
   .activities-header .subject-content {
     width: calc(100% - 55px);
     float: right; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .activities-header .subject-content {
         width: calc(100% - 90px); } }
 
@@ -981,14 +1235,14 @@ ul {
 .activities-history {
   padding-bottom: 30px;
   border-bottom: 1px solid #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .activities-history {
       padding-bottom: 40px; } }
 
 .last-activities-content {
   float: left;
   width: 50%; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .last-activities-content {
       width: calc(100% - 214px); } }
 
@@ -997,13 +1251,13 @@ ul {
   height: 160px;
   padding-top: 10px;
   overflow: hidden; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .last-activities-items {
       width: calc(100% - 90px);
       height: 190px;
       padding-top: 20px;
       padding-left: 12px; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .last-activities-items {
       padding-left: 18px; } }
 
@@ -1029,19 +1283,19 @@ ul {
   margin-right: 2px;
   margin-bottom: 20px;
   background: #EEEEEE; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .last-activities-item {
       width: 90px;
       height: 160px;
       margin-right: 12px; } }
-  @media (min-width: 840px) {
+  @media (min-width: 960px) {
     .last-activities-item {
       margin-right: 17px; } }
   .last-activities-item .profile-photo {
     width: 55px;
     margin: 0 auto;
     margin: 10px auto; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .last-activities-item .profile-photo {
         width: auto;
         margin: 0; } }
@@ -1051,7 +1305,7 @@ ul {
   height: 150px;
   float: right;
   padding-left: 20px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .related-activities {
       width: 214px;
       height: 180px;
@@ -1059,14 +1313,14 @@ ul {
   .related-activities div {
     height: 40px;
     line-height: 40px; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .related-activities div {
         height: 50px;
         line-height: 50px; } }
 
 .activities-asked {
   display: none; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .activities-asked {
       width: 90px;
       height: 180px;
@@ -1084,7 +1338,7 @@ span.item-activity {
   padding-top: 10px;
   text-align: center;
   border-top: 1px solid #7D8B9C; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     span.item-activity {
       width: 70px;
       margin: 10px; } }
@@ -1093,13 +1347,13 @@ span.item-activity {
   background: white;
   text-align: center;
   padding-top: 20px; }
-  @media (min-width: 660px) {
+  @media (min-width: 768px) {
     .more-activities {
       padding-top: 25px; } }
   .more-activities span {
     display: block;
     margin-bottom: 52px; }
-    @media (min-width: 660px) {
+    @media (min-width: 768px) {
       .more-activities span {
         margin-bottom: 62px; } }
     .more-activities span:after {
@@ -1168,242 +1422,3 @@ span.item-activity {
 
 .activities:nth-child(3) .last-activities-item:nth-child(4) .profile-photo-content {
   background: url(../../images/photo-andrew.jpg) no-repeat center center/cover; }
-
-.profile-container {
-  min-height: 100%;
-  background: #24282A; }
-  @media (min-width: 660px) {
-    .profile-container {
-      padding-top: 12px;
-      padding-bottom: 40px; } }
-
-.profile-outer-content {
-  max-width: 850px;
-  min-height: 100%;
-  position: relative;
-  margin: 0 auto;
-  background: white; }
-
-.profile-inner-content {
-  width: 94%;
-  margin: 0 auto; }
-  @media (min-width: 660px) {
-    .profile-inner-content {
-      width: 90%;
-      max-width: 590px; } }
-
-.profile-inner-content .profile-data .profile-photo-content {
-  width: 50px;
-  height: 50px;
-  margin: 0 auto;
-  background: url(../../images/photo-halima.jpg) no-repeat center center/cover; }
-  @media (min-width: 660px) {
-    .profile-inner-content .profile-data .profile-photo-content {
-      width: 60px;
-      height: 60px; } }
-
-.close-button {
-  width: 10px;
-  height: 10px;
-  position: absolute;
-  top: 20px;
-  right: 20px;
-  background: url(../../sprites/icon-close.jpg) no-repeat center center/cover; }
-
-.profile-data {
-  width: 100%;
-  padding-top: 20px;
-  text-align: center;
-  border-bottom: 1px solid #7D8B9C; }
-  .profile-data .name {
-    margin-right: 0;
-    margin-top: 0; }
-
-@media (min-width: 660px) {
-  .profile-history {
-    margin-bottom: 0px; } }
-.profile-history li {
-  margin-bottom: 18px; }
-  @media (min-width: 660px) {
-    .profile-history li {
-      float: left;
-      margin-right: 22px; } }
-@media (min-width: 660px) {
-  .profile-history li:last-child {
-    margin-right: 0; } }
-@media (min-width: 660px) {
-  .profile-history .activity-level {
-    margin-right: 0; } }
-.profile-history span {
-  display: block;
-  margin-top: 4px; }
-  @media (min-width: 660px) {
-    .profile-history span {
-      display: inline;
-      margin-left: 10px; } }
-
-@media (min-width: 660px) {
-  .activity-badges {
-    float: right;
-    margin-left: 10px; } }
-.activity-badges li {
-  width: 18px;
-  height: 25px;
-  display: inline-block;
-  margin: 0 6px 0 0;
-  font-size: 0px;
-  color: transparent;
-  background: url(../../sprites/icon-badge-red.jpg) no-repeat center center/cover; }
-.activity-badges li:last-child {
-  background: url(../../sprites/icon-badge-grey.jpg) no-repeat center center/cover;
-  margin-right: 0; }
-
-.latest-members {
-  text-align: center; }
-
-.members-gallery {
-  width: 294px;
-  margin: 20px auto; }
-  .members-gallery .gallery-item {
-    width: 90px;
-    float: left;
-    margin-right: 12px; }
-  .members-gallery .gallery-item:last-child {
-    margin-right: 0; }
-  .members-gallery .profile-photo {
-    width: 90px;
-    display: inline-block;
-    background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 8%, #8c8c8c 10%);
-    background-size: 30px 30px;
-    padding: 20px; }
-    .members-gallery .profile-photo .profile-photo-content {
-      width: 50px;
-      height: 50px; }
-  .members-gallery .name {
-    margin-right: 0; }
-
-.gallery-item:first-child .profile-photo-content {
-  background: url(../../images/photo-waweru.jpg) no-repeat center center/cover; }
-
-.gallery-item:nth-child(2) .profile-photo-content {
-  background: url(../../images/photo-patricia.jpg) no-repeat center center/cover; }
-
-.gallery-item:last-child .profile-photo-content {
-  background: url(../../images/photo-alouch.jpg) no-repeat center center/cover; }
-
-.profile-slider {
-  text-align: center;
-  position: relative; }
-
-.service-statistics {
-  width: 200px;
-  margin: 0 auto 40px; }
-  @media (min-width: 480px) {
-    .service-statistics {
-      width: 440px; } }
-  .service-statistics li {
-    float: left;
-    width: 90px;
-    height: 90px;
-    position: relative;
-    padding-top: 10px;
-    z-index: 1; }
-  .service-statistics li:first-child, .service-statistics li:nth-child(3) {
-    margin-right: 20px; }
-  @media (min-width: 480px) {
-    .service-statistics li:nth-child(2) {
-      margin-right: 20px; } }
-  .service-statistics li:before {
-    content: "";
-    display: block;
-    width: 90px;
-    height: 90px;
-    position: absolute;
-    top: 0;
-    z-index: -1;
-    background: rgba(224, 243, 253, 0.8); }
-  .service-statistics li:first-child:before {
-    -webkit-transform: rotate(65deg);
-        -ms-transform: rotate(65deg);
-            transform: rotate(65deg); }
-  .service-statistics li:nth-child(2):before {
-    -webkit-transform: rotate(-15deg);
-        -ms-transform: rotate(-15deg);
-            transform: rotate(-15deg); }
-  .service-statistics li:nth-child(3):before {
-    -webkit-transform: rotate(60deg);
-        -ms-transform: rotate(60deg);
-            transform: rotate(60deg); }
-  .service-statistics li:last-child:before {
-    -webkit-transform: rotate(10deg);
-        -ms-transform: rotate(10deg);
-            transform: rotate(10deg); }
-  .service-statistics span {
-    display: block;
-    margin: 12px 0; }
-
-.profile-slider h3 {
-  margin-bottom: 40px; }
-
-.slide-button {
-  width: 30px;
-  height: 30px;
-  position: absolute;
-  top: 0;
-  border-radius: 100%; }
-
-.slide-back-button {
-  background: url(../../sprites/icon-slide-back.jpg) no-repeat center center/cover; }
-
-.slide-next-button {
-  right: 0;
-  background: url(../../sprites/icon-arrow-next.jpg) no-repeat center center/cover; }
-
-.discussion-info {
-  position: relative;
-  padding-bottom: 80px;
-  background-image: repeating-linear-gradient(45deg, #ffffff, #ffffff 8%, #8c8c8c 10%);
-  background-size: 30px 30px; }
-
-.hottest-discussion {
-  text-align: center; }
-  .hottest-discussion h3 {
-    margin-bottom: 80px; }
-  .hottest-discussion .discussion-info .profile-photo-content {
-    width: 50px;
-    height: 50px;
-    margin: 0 auto;
-    background: url(../../images/photo-andrew.jpg) no-repeat center center/cover;
-    position: absolute;
-    left: calc(100% / 2 - 25px);
-    top: -25px; }
-
-.discussion-statistics {
-  width: 80%;
-  margin: 0 auto;
-  text-align: left; }
-  @media (min-width: 480px) {
-    .discussion-statistics {
-      text-align: center; } }
-  .discussion-statistics li {
-    float: left;
-    width: 50%;
-    margin-bottom: 20px; }
-    @media (min-width: 660px) {
-      .discussion-statistics li {
-        width: 25%; } }
-
-.profile-photo {
-  padding: 10px; }
-  @media (min-width: 660px) {
-    .profile-photo {
-      border: none;
-      padding: 20px; } }
-  .profile-photo .profile-photo-content {
-    width: 35px;
-    height: 35px;
-    border-radius: 100%; }
-    @media (min-width: 660px) {
-      .profile-photo .profile-photo-content {
-        width: 50px;
-        height: 50px; } }

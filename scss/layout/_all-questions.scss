@@ -1,3 +1,206 @@
+.all-questions-outer-content {
+	padding-bottom: 30px;
+	background: $white-grey;
+	@include bp(large) {
+		width: 95%;
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+}
+
+.all-questions-inner-content {
+	background: $white-grey;
+	@include bp(small) {
+		max-width: 100%;
+	}
+	@include bp(medium) {
+		margin: 0 auto;
+		width: 840px;
+	}
+}
+
+.all-questions-header {
+	height: 110px;
+	position: relative;
+	background: white;
+	box-shadow: 0px 1px 4px $light-grey;
+	@include bp(small) {
+		height: 150px;
+	}
+	@include bp(medium) {
+		height: 160px;
+	}
+}
+
+.all-questions-header-outer-content {
+	height: 60px;
+	position: relative;
+	@include bp(small) {
+		height: 105px;
+	}
+	@include bp(medium) {
+		width: 95%;
+		max-width: 1260px;
+		margin: 0 auto;
+	}
+}
+
+.all-questions-header .all-questions-heading {
+	padding-right: 10px;
+	width: 100%;
+	@extend %clearfix;
+	@include bp(small) {
+		float: left;
+		width: auto;
+		margin-top: 39px; 
+	}
+	h1.question-main-heading {
+		float: left;
+		margin: 0;
+		@include bp(small) {
+			margin-right: 44px;
+		}
+		@include bp(medium) {
+			margin-right: 48px;
+		}
+	}
+	.add-question-button {
+		float: right;
+		@include bp(medium) {
+			margin-top: 2px;
+		}
+	}
+}
+
+.all-questions-header-inner-content {
+	width: 85%;
+	height: 100%;
+	float: right;
+	padding-top: 17px;
+	@include bp(small) {
+		@extend %clearfix;
+		padding-right: 20px;
+		padding-top: 0;
+	}
+	@include bp(medium) {
+		width: 65%;
+		float: none;
+		margin: 0 auto;
+		padding-right: 0;
+	}
+	@include bp(large) {
+		width: 840px;
+	}
+}
+
+.all-questions-filters {
+	display: none;
+	@include bp(small) {
+		display: block;
+		float: right;
+		margin-top: 48px;
+	}
+	@include bp(medium) {
+		margin-top: 50px;
+	}
+	input[type="radio"] {
+  		margin-top: -1px;
+  		vertical-align: middle;
+	}
+	input:nth-child(3) {
+		margin-left: 12px;
+	@include bp(large) {
+		margin-left: 24px;
+		}
+	}
+	p {
+		display: inline;
+		margin-left: 24px;
+		@include bp(large) {
+			margin-left: 48px;
+		}
+	}
+	a {
+		@include bp(large) {
+			margin: 0 6px;
+		}
+	}
+}
+
+.search-content {
+	display: none;
+	@include bp(small) {
+		display: block;
+		height: 32px;
+	}
+	@include bp(medium) {
+		width: 95%;
+		max-width: 1260px;
+		height: 34px;
+		margin: 0 auto;
+	}
+}
+
+.search-input {
+	@extend %clearfix;
+}
+
+.search-form {
+	width: 85%;
+	float: right;
+	height: 32px;
+	padding-right: 20px;
+	@include bp(medium) {
+		width: 65%;
+		padding-right: 0;
+		float: none;
+		margin: 0 auto;
+		height: 34px;
+	}
+	@include bp(large) {
+		width: 840px;
+	}
+	input[id="query"] {
+		height: 32px;
+		width: calc(100% - 200px);
+		padding-left: 20px;
+		float: left;
+		border: 1px solid $light-grey;
+		background: lighten($light-grey,4%);
+		@include bp(medium) {
+			height: 34px;
+			width: calc(100% - 212px);
+		}
+	}
+	input[type="button"] {
+		width: 180px;
+		height: 32px;
+		float: right;
+		background: white;
+		border: 1px solid $grey;
+		@include bp(medium) {
+			height: 34px;
+			width: 190px;
+		}
+	}
+}
+
+.search-menu-button {
+	width: 180px;
+	height: 30px;
+	display: block;
+	position: absolute;
+	left: calc(50% - 90px);
+	bottom: 20px;
+	border: 1px solid $grey;
+	line-height: 30px;
+	text-align: center;
+	background: white;
+	@include bp(small) {
+		display: none;
+	}
+}
+
 .activities {
 	background: white;
 	box-shadow: 0 2px 4px $light-grey;
@@ -23,7 +226,6 @@
 	.subject-content {
 		width: calc(100% - 55px);
 		float: right;
-		//text-align: right;
 		@include bp(small) {
 			width: calc(100% - 90px);
 		}
